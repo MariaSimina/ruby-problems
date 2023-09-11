@@ -9,7 +9,6 @@ def substrings(string, array)
             end
         end
     end
-
 end
 
 dictionary = ["below","down","go","going","horn", "how","howdy","it","i","low","own","part","partner","sit"]
