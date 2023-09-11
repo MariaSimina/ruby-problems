@@ -12,7 +12,7 @@ def caesar_cipher(string, key)
     end
     string.map! {|number| number.chr}
     result = string.join
-    p result
+    result
 end
 
 caesar_cipher("Zbb!!", 5)
