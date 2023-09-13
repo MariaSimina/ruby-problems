@@ -1,18 +1,13 @@
 def bubble_sort (array)
-    (1..array.length - 1).each do
+    loop do
         swapped = false
-        array.each_with_index do |number, index|
-            if index == array.length - 1
-                next
-            end
-            if number > array[index + 1]
+        (array.length - 1).times do |index|
+            if array[index] > array[index + 1]
                 array[index], array[index + 1] = array[index + 1], array[index]
                 swapped = true
             end
         end
-        if swapped == false
-            break
-        end
+        break if swapped == false
     end
     array
 end
